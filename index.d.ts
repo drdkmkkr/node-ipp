@@ -183,7 +183,7 @@ export interface PrintJobResponse {
   'job-attributes-tag': {
     'job-id': number;
     'job-state': JobState;
-    'job-state-reasons': JobStateReasons[];
+    'job-state-reasons': JobStateReasons;
     'job-uri': string;
     'job-state-message'?: string;
     'number-of-intervening-jobs'?: number;
@@ -343,7 +343,7 @@ export interface SendDocumentResponse {
     'job-id': number;
     'job-uri': string;
     'job-state': JobState;
-    'job-state-reasons': JobStateReasons[];
+    'job-state-reasons': JobStateReasons;
     'job-state-message'?: string;
     'number-of-intervening-jobs'?: number;
   };
@@ -476,7 +476,7 @@ export interface OperationAttributes {
   'job-password-encryption'?: JobPasswordEncryption;
   'job-state'?: JobState;
   'job-state-message'?: string;
-  'job-state-reasons'?: JobStateReasons[];
+  'job-state-reasons'?: JobStateReasons;
   'job-uri'?: string;
   'last-document'?: boolean;
   limit?: number;
@@ -590,7 +590,7 @@ export interface JobTemplateAttributes {
   'job-sheets-col'?: JobSheetsInterface;
   'job-state'?: JobState;
   'job-state-message'?: string;
-  'job-state-reasons'?: JobStateReasons[];
+  'job-state-reasons'?: JobStateReasons;
   'job-uri'?: string;
   'job-uuid'?: string;
   'materials-col'?: Materials[];
@@ -704,7 +704,7 @@ export interface JobStatusAttributes {
   'job-sheets-col-actual'?: JobSheetsInterface[];
   'job-state'?: JobState;
   'job-state-message'?: string;
-  'job-state-reasons'?: JobStateReasons[];
+  'job-state-reasons'?: JobStateReasons;
   'job-uri'?: string;
   'job-uuid'?: string;
   'materials-col-actual'?: Materials[];
@@ -724,7 +724,7 @@ export interface JobStatusAttributes {
   'output-device-assigned'?: string;
   'output-device-job-state'?: JobState;
   'output-device-job-state-message'?: string;
-  'output-device-job-state-reasons'?: JobStateReasons[];
+  'output-device-job-state-reasons'?: JobStateReasons;
   'output-device-uuid-assigned'?: string;
   'overrides-actual'?: Overrides[];
   'page-delivery-actual'?: PageDelivery[];
