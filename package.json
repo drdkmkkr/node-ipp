@@ -1,6 +1,6 @@
 {
   "name": "@mkkr/ipp",
-  "version": "2.6.5",
+  "version": "2.6.6",
   "types": "./index.d.ts",
   "description": "Internet Printing Protocol (IPP) for Node.js",
   "keywords": [

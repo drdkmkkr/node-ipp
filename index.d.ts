@@ -593,6 +593,7 @@ export interface JobTemplateAttributes {
   'job-state-reasons'?: JobStateReasons;
   'job-uri'?: string;
   'job-uuid'?: string;
+  'job-name'?: string;
   'materials-col'?: Materials[];
   media?: Media;
   'media-col'?: MediaInterface;
@@ -707,6 +708,7 @@ export interface JobStatusAttributes {
   'job-state-reasons'?: JobStateReasons;
   'job-uri'?: string;
   'job-uuid'?: string;
+  'job-name'?: string;
   'materials-col-actual'?: Materials[];
   'media-actual'?: string[];
   'media-col-actual'?: MediaInterface[];
